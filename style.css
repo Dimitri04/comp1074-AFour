@@ -1,0 +1,168 @@
+.status {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+div#mainContent div#contentSection h1 {
+  color: rgb(100, 167, 11);
+  display: block;
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.msg {
+  padding: 10px;
+  display: inline-block;
+  display: block;
+}
+
+div#mainContent div#contentSection h2 {
+  color: #004b87;
+  font-size: 1.2rem;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.msg p {
+  font-size: 1rem;
+}
+
+.search-container {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-container input {
+  width: 80%;
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid rgb(212, 212, 212);
+  font-size: 20px;
+}
+
+.s-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.search-container button {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  color: #004b87;
+  padding-left: 20px;
+}
+
+.search-container button:hover {
+  color: #4caf50; /* Green */
+  cursor: pointer;
+}
+
+.links {
+  box-sizing: border-box;
+  padding: 10px 0px 0px 0px;
+  display: block;
+}
+
+.links > p {
+  display: inline-block;
+  margin: auto 0;
+  font-weight: 100;
+  font-size: 1rem;
+}
+
+.links > ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  list-style: none;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.links > ul li {
+  margin-left: 10px;
+  padding: 5px;
+}
+
+.back {
+  box-sizing: border-box;
+  padding: 10px 0px;
+}
+
+.back a,
+.links > ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.back a:hover,
+.links > ul li a:hover{
+    color: #4caf50; /* Green */
+}
+
+.back > a > i {
+  margin-right: 10px;
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .status {  
+    flex-direction: row;
+  }
+
+  div#mainContent div#contentSection h1 {
+    font-size: 8rem;
+      margin: auto 0;
+  }
+
+  .msg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  div#mainContent div#contentSection h2 {
+    font-size: 3rem;
+  }
+
+  .msg p {
+    font-size: 1.2rem;
+  }
+
+  .search-container input {
+    font-size: 30px;
+    padding: 10px;
+  }
+  
+  .search-container button {
+    font-size: 30px;
+  }
+
+  .links {
+    display: flex;
+    padding: 20px 80px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .links > p {
+    display: block;
+    width: 406px;
+  }
+
+  .links > ul {
+    display: inline-block;
+    margin: auto 0;
+    margin-top: 0px;
+    padding: 0px;
+  }
+
+  .back {
+    padding: 10px 80px;
+  }
+}
